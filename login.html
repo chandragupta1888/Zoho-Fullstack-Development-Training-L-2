@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<head>
+<title>Login</title>
+<style>
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #00203FFF;
+    font-family: sans-serif;
+    background-size:cover;
+}
+.box{ 
+    background: black;
+    top: 50vh;
+    left: 50vw;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 70px 30px;
+}
+.user{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+    color: #4f92ff;
+}
+p{
+    color: #4f92ff;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+input{
+    width: 100%;
+    margin-bottom: 10px;
+}
+ input[type="text"], input[type="password"] ,input[type="email"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #4f92ff;
+    font-size: 16px;
+}
+input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #2196f3;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: none;
+}
+a
+{
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
+    color: #4f92ff;
+}
+a:hover
+{
+    background-color: black;
+}
+</style>    
+</head>
+<body>
+    <div class="box">
+    <img src="user.png" class="user">
+        <h1>Login Here</h1>
+        <form name="myform"  action="login.php" method="POST">
+            <p>Username</p>
+            <input type="text" name="uname" placeholder="Enter Username " required="">
+            <p>Password</p>
+            <input type="password" name="upswd" placeholder="Enter Password" required="">
+            <input type="submit" name="submit" id="submit" value="Login">
+            <br><br>
+            <a href="register.html">Register for new account ?</a>
+        </form>        
+    </div>
+</body>
+</html>
